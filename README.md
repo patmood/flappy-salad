@@ -58,10 +58,30 @@ Still on the bird actor screen, create a new rule - `touch` is `outside`. This m
 
 ![touch rule](screenshots/4_touch_rule.png)
 
-From the list of behaviors, drag a `Timer` into the rule. This means that the timer will run every time the screen is `touched` `outside` of the bird. Make the timer for `0.2` seconds and tick the `run to completion` box.
+From the list of behaviors, drag a `Timer` into the rule. This means that the timer will run every time the screen is `touched` `outside` of the bird. Make the timer for `0.2` seconds and tick the `run to completionn` box.
 
-Now drag a `Move To` behavior fromt he list to inside the timer. We want the bird to move `100` pixels in a Y direction (relative to the actor, itself)
+Now drag a `Move To` behavior front he list to inside the timer. We want the bird to move `100` pixels in a Y direction (relative to the actor, itself)
 
 ![flap](screenshots/5_flap_motion.png)
+
+### Life and death
+
+There needs to be a way to tell if the player is alive, or if the game is over. For this we'll use a game attribute called `GameOver`. On the scene screen, switch from actors to attributes, then add a new "boolean" and name it `GameOver`.
+
+![game over attribute](screenshots/6_game_over_attribute.png)
+
+Now edit the bird actor and create a new rule: When `Attribute` `game.GameOver` is `false` and drag all the other rules into it. This means that all the behavior we've made so far will run when the game is not over.
+
+The bird actor should look something like this:
+
+![bird actor namespace](screenshots/7_rules_game_over.png)
+
+### Hitting the ground
+
+Create a new actor and drag the ground.png image onto it. Edit the `Graphics` attribute so that `Horizontal Wrap` is `tile`. Now you can stretch the ground so it is wide enough to cover the full width of the screen.
+
+The game is over when the bird hits the ground, so make a new rule in the bird actor that changes the games GameOver attribute to `true` and sets the actor velocity to 0, like this:
+
+![game over](screenshots/8_game_over.png)
 
 
