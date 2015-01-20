@@ -44,9 +44,16 @@ Choose the `top pipe` actor to spawn and for position, set Y to `self.TopBarY` w
 
 Copy/paste this behavior for the bottom pipe, but set position Y to `self.TopBarY - 400`. This will put the bottom bar below the top bar.
 
-Before we spawn the 2 pipes, we need to change TopBarY to be random each time. Drag the `Change Attribute` behavior into the timer and put it above the pipe spawner. Make it change `self.TopBarY` to random(100). It should look like this in the end:
+Before we spawn the 2 pipes, we need to change TopBarY to be random each time. Drag the `Change Attribute` behavior into the timer and put it above the pipe spawner. Make it change `self.TopBarY` to random(100, 300). It should look like this in the end:
 
 ![bottom pipe](screenshots/10_pipe_spawner.png)
 
+### Collide with pipes
+
+Just like when the player touches the ground, we need to end the game when they hit one of hte pipes.
+
+We can reuse the original rule (since it's the same behavior), but add conditions for when the bird touches the pipe. When `ANY` of these conditions is `true`, the `gameOver` attribute will be changed.
+
+![pipe death](screenshots/11_bird_touch_pipes.png)
 
 
