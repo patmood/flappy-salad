@@ -4,6 +4,8 @@ How to make a Flappy Bird style game in Game Salad!
 
 Notes for my middle school class about making games.
 
+![Flappy Salad](screenshots/flappy_salad.png)
+
 ## Start Here:
 
 - [Part 1 - Setup](part1.md)
