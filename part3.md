@@ -56,4 +56,12 @@ We can reuse the original rule (since it's the same behavior), but add condition
 
 ![pipe death](screenshots/11_bird_touch_pipes.png)
 
+Now the game is starting to get challenging!
 
+### Stop the pipes
+
+There's one more problem. Even when the game is over, the pipes keep moving. Lets add a condition that only moves the pipes while the game is running.
+
+Remember to make the same change to both pipes.
+
+![stop pipes](screenshots/12_stop_pipes.png)
