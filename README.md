@@ -12,3 +12,5 @@ Notes for my middle school class about making games.
 - [Part 2 - Adding a player](part2.md)
 - [Part 3 - Life and death](part3.md)
 - [Part 4 - Scoring](part4.md)
+- [Part 5 - Finishing Touches](part5.md)
+
