@@ -12,3 +12,14 @@ Here is an example of where we would play the score sound:
 
 Add the `ouch` and `flap` sounds to the Bird actor in the correct location.
 
+### Animation
+
+There's still something missing...
+
+Our bird still doesnt flap! It's not a very flappy bird without the wing animation!
+
+While the player is alive, add an 'Animate' behavior and drag in the 3 images for the bird. Each image is a different animation frame for the flap.
+
+![flap!](screenshots/17_animate_bird.png)
+
+Now we have a truly flappy bird!
